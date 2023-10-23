@@ -1,0 +1,338 @@
+<html lang="en"><head>
+    <meta charset="utf-8">
+    <meta name="robots" content="noindex, nofollow">
+
+    <title>AppEscape</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://netdna.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200">
+    <link href="styles.css" rel="stylesheet">
+    <style type="text/css">
+    
+
+</style>
+    <script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script src="https://netdna.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+
+</head>
+<body>
+    <div class="container">
+    <div class="row">
+    	<div class="col-md-6" style="    width: 100%;
+      padding: 0px !important;">
+            <div class="panel with-nav-tabs panel-default" style="box-shadow: 0 1px 1px rgb(255 255 255 / 5%);     border: 1px solid transparent;">
+
+              <div class="panel-body" style="padding: 40px;">
+
+                
+                <div class="tab-content">
+                    <center><div class="tab-pane fade active in" id="tab1default" style="display: block;">
+                        
+                        <div style="margin-top: 60%;">
+                            <button type="button" class="btn btn-secondary" style=" padding: 6px 14px; border-radius: 5px; color: #ffffff; background: #f67f7f;" id="jailbreak" onclick="jailbreak()">Jailbreak</button><br><br>
+                            
+                            <a href="https://semijbapps.com/sileo/secure/sileo.mobileconfig"><button type="button" class="btn btn-secondary" style=" padding: 6px 14px; border-radius: 5px; color: #ffffff; background: #f67f7f; display:none;" id="sileo">Install Sileo</button></a><br><br>
+                        <p id="display"><b>Status: Not running</b></p>
+                        <p id="ready"></p>
+                        <p id="ready1"></p><br><br>
+                        
+                        
+                        </div>
+                        
+
+                        <div id="myModal" style="display:none; margin-top:-50%;">
+                            <div class="modal-content" style="border-radius:15px;">
+                              <span onclick="closeModal()" id="close" class="close" style="padding:5px 10px ">×</span>
+                              <h3 style="text-align: center; font-weight: bold; font-size: 16px;">Success</h3>
+                              
+                              <p style="text-align: center; color: #111111; font-size: 14px; padding: 6px; background: white; border-radius:15px;">Post environment started successfully, system wide injection will only affect newly spawned processes for now!</p><hr>
+                              
+                             <center> <a style="font-weight: bold;" onclick="closeModal()">OK</a>
+                              </center><br>
+                            </div>
+                          
+                          </div>
+                    </div></center>
+
+                    <div class="tab-pane active" id="tab2default" style="display: none;">
+                        <p id="log1" style="display:none; font-size: 12px;">("blame" (' Library Mobi eSubstrate<br>
+                            DynamicLibraries"'DockSpring.dylib*"usryliby systemWlibdyld.dylib""Vusrvlibwsystemv libsystem _kernel.dylib" "VusrVlib\/system!/ libsystem_pthread.dylib""W/usrVlib\/system!/ libsystem_c.dylib""Wusrl/libV/libc++abi.dylib""VusrV lib\/system libdispatch.dylib"),"app_name""SpringBoard""timest amp":"2020-07-27 13:34:54.00
+                            -0400' "app _version"."1.0""slice _uuid": "62252b0c-6
+                            Oe7-32c8-8ecd-9db8403cc3c4""adam_id":O,"build._ version"."50" "bundleID*"com.apple.springboard""sh are with_app_devs".:O,is_first_party":1,"bug_type"."10
+                            9" "os _version":"Phone OS 13.5
+                            (17F75)""incident_id": "ABE51CD7-91C4-4EB2-A2BF-CDDBD505657' "name". "SpringBoard'"symbolicate d"-true}
+                            Incident Identifier: ABE51CD7-91C4-4EB2-A2BF-CDDBD505657</p>
+                        <p id="log2" style="display:none; font-size: 12px;">CrashReporter Key:<br>
+                            Process: SpringBoard [5843]<br>
+                            Path: /System/Library/CoreServices/
+                            SpringBoard.app/SpringBoard<br>
+                            Identifier: com.apple.springboard<br>
+                            Version: 50 (1.0) o</p>
+                        <p id="log3" style="display:none; font-size: 12px;">Code Type: ARM-64 (Native)<br>
+                            Role: Foreground<br>
+                            Parent Process: launchd [1]<br>
+                            Coalition: com.apple.springboard [75]<br>
+                            Release Type: User<br>
+                            Baseband Version: 3.05.00</p>
+                    </div>
+
+                    <div class="tab-pane" id="tab3default" style="display: none;">
+                        <center>
+                            <img src="img/fugu.png" style="width:30%;"><br>
+
+                            <h2>AppEscape Jailbreak Tool</h2>
+
+                            <p>AppEscape</p><br>
+
+                            <a href="https://github.com/AppEscape/AppEscape"><p style="color: #f35757;">Source Code</p></a>
+                            <p style="color: #f35757;">License</p>
+                            <p style="color: #f35757;">Credits</p><br>
+
+                            <div style="width:100%; position: fixed;
+                            bottom: 100px; left:0; right:0;">
+                                <img src="img/pinauten.png"><br>
+                            </div>
+                        
+                        </center>
+                    </div>
+                </div>
+            </div>
+                <div class="panel-heading" style="position: fixed;
+                bottom: 0; left:0; right:0; background-color: #ffffff;">
+                        <ul class="nav nav-tabs">
+                            <li class="active"><a onclick="tab1()" href="#tab1default" data-toggle="tab"><span class="material-symbols-outlined">
+                              auto_fix_high
+                              </span><br>Jailbreak</a></li>
+                            <li class=""><a onclick="tab2()" href="#tab2default" data-toggle="tab"><span class="material-symbols-outlined">
+                              quick_reference_all
+                              </span><br>Log</a></li>
+                            <li class=""><a onclick="tab3()" href="#tab3default" data-toggle="tab"><span class="material-symbols-outlined">
+                              info
+                              </span><br>About</a></li>
+                        </ul>
+                </div>
+            </div>
+        </div>
+	</div>
+</div>
+<br>
+
+<script>
+    function jailbreak() {
+        document.getElementById("jailbreak").innerHTML = "Jailbreaking...";
+        document.getElementById("jailbreak").style.background = "#bab5b5";
+
+        document.getElementById("display").innerHTML = "Launching oobPCI";
+        document.getElementById("ready").innerHTML = "Gaining r/W";
+        document.getElementById("ready1").innerHTML = "Launching ooPCI";
+
+        setTimeout(() => { 
+
+            document.getElementById("display").innerHTML = "Gaining r/W";
+            document.getElementById("ready").innerHTML = "Launching ooPCI";
+            document.getElementById("ready1").innerHTML = "Launching kexploitd";
+
+        }, 1000);
+
+setTimeout(() => { 
+
+    document.getElementById("display").innerHTML = " Launching ooPCI";
+    document.getElementById("ready").innerHTML = "Launching kexploitd";
+    document.getElementById("ready1").innerHTML = "Patchfinding";
+
+
+      }, 2000);
+      
+      setTimeout(() => { 
+
+        document.getElementById("display").innerHTML = "Launching kexploitd";
+        document.getElementById("ready").innerHTML = "Patchfinding";
+        document.getElementById("ready1").innerHTML = "Gaining r/w";
+
+
+      }, 3000);
+      
+      setTimeout(() => { 
+
+        document.getElementById("display").innerHTML = "Patchfinding";
+        document.getElementById("ready").innerHTML = "Gaining r/w";
+        document.getElementById("ready1").innerHTML = "Launching ooPCI";
+
+        document.getElementById("log1").style.display="block";
+
+
+      }, 4000);
+
+      setTimeout(() => { 
+
+        document.getElementById("display").innerHTML = "Gaining r/w";
+        document.getElementById("ready").innerHTML = "Launching ooPCI";
+        document.getElementById("ready1").innerHTML = "Patchfinding";
+
+
+                }, 5000);
+
+        setTimeout(() => { 
+
+            document.getElementById("display").innerHTML = "Launching ooPCI";
+            document.getElementById("ready").innerHTML = "Patchfinding";
+            document.getElementById("ready1").innerHTML = "Gaining r/W";
+            
+
+                }, 6000);
+
+
+        setTimeout(() => { 
+
+            document.getElementById("display").innerHTML = "Patchfinding";
+            document.getElementById("ready").innerHTML = "Gaining r/W";
+            document.getElementById("ready1").innerHTML = "Starting jailbreakd";
+
+
+                }, 8000);
+
+        setTimeout(() => { 
+
+            document.getElementById("display").innerHTML = "Gaining r/W";
+            document.getElementById("ready").innerHTML = "Starting jailbreakd";
+            document.getElementById("ready1").innerHTML = "Bootstrapping";
+
+
+                }, 9000);
+
+        setTimeout(() => { 
+
+            document.getElementById("display").innerHTML = "Starting jailbreakd";
+            document.getElementById("ready").innerHTML = "Bootstrapping";
+            document.getElementById("ready1").innerHTML = "Loading Basebin Trustache";
+
+
+                }, 10000);
+
+        setTimeout(() => { 
+
+            document.getElementById("display").innerHTML = "Bootstrapping";
+            document.getElementById("ready").innerHTML = "Loading Basebin Trustache";
+            document.getElementById("ready1").innerHTML = "Initializing Environment";
+
+            document.getElementById("log2").style.display="block";
+
+                }, 11000);
+
+
+        setTimeout(() => { 
+
+            document.getElementById("display").innerHTML = "Loading Basebin Trustache";
+            document.getElementById("ready").innerHTML = "Initializing Environment";
+            document.getElementById("ready1").innerHTML = "Starting jailbreakd";
+
+
+                }, 12000);
+                
+                
+        setTimeout(() => { 
+
+            document.getElementById("display").innerHTML = "Initializing Environment";
+            document.getElementById("ready").innerHTML = "Starting jailbreakd";
+            document.getElementById("ready1").innerHTML = "Bootstrapping";
+                }, 13000);
+
+
+        setTimeout(() => { 
+
+            document.getElementById("display").innerHTML = " Starting jailbreakd";
+            document.getElementById("ready").innerHTML = "Bootstrapping";
+            document.getElementById("ready1").innerHTML = "Initializing System Hook";
+                }, 16000);
+
+        setTimeout(() => { 
+
+            document.getElementById("display").innerHTML = "Bootstrapping";
+            document.getElementById("ready").innerHTML = "Initializing System Hook";
+            document.getElementById("ready1").innerHTML = "Initializing Environment";
+                }, 17000);
+
+
+        setTimeout(() => { 
+
+            document.getElementById("display").innerHTML = "Initializing System Hook";
+            document.getElementById("ready").innerHTML = "Initializing Environment";
+            document.getElementById("ready1").innerHTML = "Refreshing Icon Cache";
+                }, 18000);
+
+        setTimeout(() => { 
+
+            document.getElementById("display").innerHTML = "Initializing Environment";
+            document.getElementById("ready").innerHTML = "Refreshing Icon Cache";
+            document.getElementById("ready1").innerHTML = "Starting Launch Daemons";
+                }, 19000);
+
+        setTimeout(() => { 
+
+            document.getElementById("display").innerHTML = "Refreshing Icon Cache";
+            document.getElementById("ready").innerHTML = "Starting Launch Daemons";
+            document.getElementById("ready1").innerHTML = "Initializing System Hook";
+                }, 20000);
+
+        setTimeout(() => { 
+
+            document.getElementById("display").innerHTML = "Starting Launch Daemons";
+            document.getElementById("ready").innerHTML = "Initializing System Hook";
+            document.getElementById("ready1").innerHTML = "Status: Done!";
+
+            document.getElementById("log3").style.display="block";
+                }, 21000);
+
+        setTimeout(() => { 
+
+            document.getElementById("display").innerHTML = "Initializing System Hook";
+            document.getElementById("ready").innerHTML = "Status: Done!";
+            document.getElementById("ready1").innerHTML = "Status: Refreshing Icon Cache";
+                }, 22000);
+
+        setTimeout(() => { 
+
+           // document.getElementById('tab1default').style.marginTop="-100px";
+            document.getElementById('myModal').style.display="block";
+            document.getElementById("display").innerHTML="Status: Done!";
+            document.getElementById("ready").innerHTML="Status: Refreshing Icon Cache";
+            document.getElementById("ready1").innerHTML="Status: Starting Launch Daemon";
+            document.getElementById("jailbreak").style.background = "#359f2f";
+            document.getElementById("sileo").style.display="block";
+            
+            document.getElementById("jailbreak").style.display="none";
+            }, 23000);
+
+        
+     
+    }
+
+    function closeModal() {
+        document.getElementById('tab1default').style.marginTop="60%";
+          document.getElementById("myModal").style.display="none";
+
+        }
+
+    function tab1() {
+        document.getElementById("tab1default").style.display="block";
+        document.getElementById("tab2default").style.display="none";
+        document.getElementById("tab3default").style.display="none";
+    }
+
+    function tab2() {
+        document.getElementById("tab1default").style.display="none";
+        document.getElementById("tab2default").style.display="block";
+        document.getElementById("tab3default").style.display="none";
+    }
+
+    function tab3() {
+        document.getElementById("tab1default").style.display="none";
+        document.getElementById("tab2default").style.display="none";
+        document.getElementById("tab3default").style.display="block";
+    }
+
+    </script>
+
+
+
+</body></html>
